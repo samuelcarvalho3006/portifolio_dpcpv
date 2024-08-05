@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="./img/Dzao.png">
+
+
+    <title>Digital Print - Home</title>
+</head>
+
+<body>
+
+    <div class="container-fluid cabecalho">
+        <nav class="navbar fixed-top navbar-expand-md" style="background-color: #FFFF;">
+            <a class="navbar-brand m-2" href="Home.html">
+                <img src="./img/logoPreta.png">
+            </a>
+
+            <!-- Menu Hamburguer -->
+            <button class="navbar-toggler hamburguer" data-toggle="collapse" data-target="#navegacao">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse justify-content-end" id="navegacao">
+
+                <ul class="navbar-nav ml-auto listas"> <!-- LISTAS DO MENU CABECALHO-->
+
+                    <li class="nav-item dropdown"> <!-- LINK BOOTSTRAP DORPDOWN MENU-->
+                        <a class="nav-link dropdown-toggle cor_fonte" href="#" id="navbarDropdownMenuLink"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Serviços
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <a class="dropdown-item" href="#">Banners e Faixas</a>
+                            <a class="dropdown-item" href="#">Adesivos</a>
+                            <a class="dropdown-item" href="#">Fachadas</a>
+                            <a class="dropdown-item" href="#">Panfletos</a>
+                            <a class="dropdown-item" href="#">Cartões de Visita</a>
+                            <a class="dropdown-item" href="#">Etiquetas</a>
+                            <a class="dropdown-item" href="#">Crachás</a>
+                        </div>
+                    </li> <!-- FECHA O DROPDOWN MENU-->
+                    <li class="nav-item">
+                        <a href="Sobre.html" class="nav-link cor_fonte">Sobre Nós</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="Contato.html" class="nav-link cor_fonte">Contato</a>
+                    </li>
+
+                </ul> <!-- FECHA LISTAS MENU CABECALHO -->
+
+            </div>
+        </nav> <!-- FECHA CABECALHO -->
+    </div> <!-- FECHA CONTAINER DO CABECALHO -->
+
+    <!-- ESPAÇO PARA O CARROSSEL -->
+    <article class="carrossel">
+        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img class="img-fluid mx-auto d-block" src="./img/logoBranca.png" alt="First slide">
+                </div>
+                <div class="carousel-item">
+                    <img class="img-fluid mx-auto d-block" src="./img/Dzao.png" alt="Second slide">
+                </div>
+                <div class="carousel-item">
+                    <img class="img-fluid mx-auto d-block" src="./img/logoPreta.png" alt="Third slide">
+                </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only"></span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                <span class="carousel-control-next-icon bg-primary" aria-hidden="true"></span>
+                <span class="sr-only"></span>
+            </a>
+        </div>
+    </article>
+    <!-- ESPAÇO PARA O CARROSSEL-->
+
+    <!-- COLUNAS EXIB IMAGE-->
+
+    <article class="columns">
+        <div class="row justify-content-center text-center">
+            <div class="col-12">
+                <h1 class="display-1">CONFIRA OS MAIS PEDIDOS!</h1>
+            </div>
+        </div>
+        <div class="row justify-content-center text-center">
+            <div class="col-xl-2 col-md-4 col-sm-12" id="colImg">
+                <img src="./img/Dzao.png" class="img-fluid" alt="Imagem">
+                <p class="title">
+                    <span>TITULO</span><br>
+                    parágrafo
+                </p>
+                <button class="btn btn-outline-primary">VEJA MAIS</button>
+            </div>
+            <div class="col-xl-2 col-md-4 col-sm-12" id="colImg">
+                <img src="./img/Dzao.png" class="img-fluid" alt="Imagem">
+                <p class="title">
+                    <span>TITULO</span><br>
+                    parágrafo
+                </p>
+                <button class="btn btn-outline-primary">VEJA MAIS</button>
+            </div>
+            <div class="col-xl-2 col-md-4 col-sm-12" id="colImg">
+                <img src="./img/Dzao.png" class="img-fluid" alt="Imagem">
+                <p class="title">
+                    <span>TITULO</span><br>
+                    parágrafo
+                </p>
+                <button class="btn btn-outline-primary">VEJA MAIS</button>
+            </div>
+            <div class="col-xl-2 col-md-4 col-sm-12" id="colImg">
+                <img src="./img/Dzao.png" class="img-fluid" alt="Imagem">
+                <p class="title">
+                    <span>TITULO</span><br>
+                    parágrafo
+                </p>
+                <button class="btn btn-outline-primary">VEJA MAIS</button>
+            </div>
+        </div>
+        <div class="row justify-content-center text-center">
+            <div class="col-12">
+                <button class="btn btn-outline-primary confira">CONFIRA TODOS OS SERVIÇOS</button>
+            </div>
+        </div>
+    </article>
+
+
+    <article class="local">
+
+    </article>
+
+    <footer>
+        <ul class="social_icon">
+            <li><a href="#"><ion-icon name="logo-facebook"></ion-icon></a></li>
+            <li><a href="#"><ion-icon name="logo-instagram"></ion-icon></a></li>
+            <li><a href="#"><ion-icon name="logo-whatsapp"></ion-icon></a></li>
+        </ul>
+
+        <p>©2024 DigitalPrint | Todos os direitos reservados</p>
+    </footer>
+</body>
+
+</html>
