@@ -1,4 +1,7 @@
 /* CABECALHO */
+.cabecalho{
+    margin-bottom: 300px;
+}
 
 .cor_fonte {
     color: black;
@@ -207,4 +210,19 @@ footer p {
 
 .login .btn{
     color: white;
+}
+
+/* POrtifolio*/
+.img_port{
+    width: 200px;
+    height: 200px;
+}
+
+.port_letra{
+    font-size: 45px;
+    
+}
+
+.port_watts{
+    font-size: 45px;   
 }
