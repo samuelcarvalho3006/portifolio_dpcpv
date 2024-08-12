@@ -1,13 +1,13 @@
 /* CABECALHO */
 .cabecalho{
-    margin-bottom: 300px;
+    margin-bottom: 200px;
 }
 
 .cor_fonte {
     color: black;
     font-weight: bold;
     text-decoration: none;
-    font-size: 20px;
+    font-size: 18px;
 }
 
 .cabecalho img {
@@ -72,11 +72,11 @@ nav {
 /* PÁGINA SOBRE */
 
 .sobre img {
-    height: 350px;
+    height: 230px;
 }
 
 .hist {
-    font-size: 26px;
+    font-size: 24px;
     text-align: justify;
 }
 
@@ -97,15 +97,15 @@ span {
 }
 
 .columns img {
-    height: 200px;
+    height: 175px;
 }
 
 .columns h1 {
-    font-size: 80px;
+    font-size: 60px;
 }
 
 .columns p {
-    font-size: 26px;
+    font-size: 24px;
 }
 
 #colImg {
@@ -122,8 +122,8 @@ span {
 /*-----------------------------------------------------------------------------------------*/
 /* SEÇÃO DO CARROSSEL */
 .carrossel {
-    margin-top: 12%;
-    padding: 50px;
+    margin-top: 7%;
+    padding: 25px;
 }
 
 .carousel-item {
@@ -132,15 +132,15 @@ span {
 }
 
 .carousel-item img {
-    height: 350px;
+    height: 300px;
 }
 
 .carousel-control-prev-icon,
 .carousel-control-next-icon {
     background-color: #06a0f9;
-    border-radius: 50%;
-    width: 30px;
-    height: 30px;
+    border-radius: 45%;
+    width: 25px;
+    height: 25px;
 }
 
 /*-----------------------------------------------------------------------------------------*/
@@ -219,10 +219,12 @@ footer p {
 }
 
 .port_letra{
-    font-size: 45px;
+    font-size: 30px;
     
 }
 
 .port_watts{
-    font-size: 45px;   
+    font-size: 35px;   
 }
+
+
