@@ -11,7 +11,50 @@
 </head>
 
 <body>
-    <div class="container">
+    <div class="container-fluid cabecalho">
+        <nav class="navbar fixed-top navbar-expand-md" style="background-color: #FFFF;">
+            <a class="navbar-brand m-2" href="index.html">
+                <img src="./img/logoPreta.png">
+            </a>
+
+            <!-- Menu Hamburguer -->
+            <button class="navbar-toggler hamburguer" data-toggle="collapse" data-target="#navegacao">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse justify-content-end" id="navegacao">
+
+                <ul class="navbar-nav ml-auto listas"> <!-- LISTAS DO MENU CABECALHO-->
+
+                    <li class="nav-item dropdown"> <!-- LINK BOOTSTRAP DORPDOWN MENU-->
+                        <a class="nav-link dropdown-toggle cor_fonte" href="#" id="navbarDropdownMenuLink"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Serviços
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <a class="dropdown-item" href="banners.html">Banners e Faixas</a>
+                            <a class="dropdown-item" href="#">Adesivos</a>
+                            <a class="dropdown-item" href="#">Fachadas</a>
+                            <a class="dropdown-item" href="#">Panfletos</a>
+                            <a class="dropdown-item" href="#">Cartões de Visita</a>
+                            <a class="dropdown-item" href="#">Etiquetas</a>
+                            <a class="dropdown-item" href="#">Crachás</a>
+                        </div>
+                    </li> <!-- FECHA O DROPDOWN MENU-->
+                    <li class="nav-item">
+                        <a href="about.html" class="nav-link cor_fonte">Sobre Nós</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="ctt.html" class="nav-link cor_fonte">Contato</a>
+                    </li>
+
+                </ul> <!-- FECHA LISTAS MENU CABECALHO -->
+
+            </div>
+        </nav> <!-- FECHA CABECALHO -->
+    </div> <!-- FECHA CONTAINER DO CABECALHO -->
+
+    <div class="container ctt">
         <div class="forms">
             <h2 class="msg" style="margin-bottom: 5%">Mensagem</h2>
             <p class="msg">Envie uma mensagem caso tenha alguma dúvida.</p>
@@ -22,10 +65,10 @@
                 <textarea name="message" id="messge" placeholder="Write something.." style="height: 200px;"></textarea>
                 <div class="row text-center justify-content-center">
                     <div class="col-6">
-                        <button class="btn btn-outline-danger" type="submit">Limpar</button>
+                        <button class="btn btn-outline-danger ctt-btn" type="submit">Limpar</button>
                     </div>
                     <div class="col-6">
-                        <button class="btn btn-outline-success" type="submit">Enviar</button>
+                        <button class="btn btn-outline-success ctt-btn" type="submit">Enviar</button>
                     </div>
                 </div>
             </form>
@@ -37,12 +80,13 @@
                 <p>Entre em contato</p>
             </div>
             <div class="body">
-                <ul>
+                <ul class="ul-ctt">
                     <li>
                         <div class="list">
                             <div class="text">
-                                <a href="#"><ion-icon name="mail-outline"></ion-icon>
-                                    <span> digitalprintcpv@gmail.com</span>
+                                <a href="#" class="ctt-icon">
+                                    <ion-icon name="mail-outline"></ion-icon>
+                                    <span class="ctt-span"> digitalprintcpv@gmail.com</span>
                                 </a>
                             </div>
 
@@ -51,8 +95,9 @@
                     <li>
                         <div class="list">
                             <div class="text">
-                                <a href="#"><ion-icon name="logo-whatsapp"></ion-icon>
-                                    <span> (12) 99256-0838</span>
+                                <a href="#" class="ctt-icon">
+                                    <ion-icon name="logo-whatsapp"></ion-icon>
+                                    <span class="ctt-span"> (12) 99256-0838</span>
                                 </a>
                             </div>
 
@@ -61,8 +106,9 @@
                     <li>
                         <div class="list">
                             <div class="text">
-                                <a href="#"><ion-icon name="logo-instagram"></ion-icon>
-                                    <span> @digitalprintcpv</span>
+                                <a href="#" class="ctt-icon">
+                                    <ion-icon name="logo-instagram"></ion-icon>
+                                    <span class="ctt-span"> @digitalprintcpv</span>
                                 </a>
                             </div>
                         </div>
@@ -71,6 +117,16 @@
             </div>
         </div>
     </div>
+
+    <footer>
+        <ul class="social_icon">
+            <li><a href="#"><ion-icon name="logo-facebook"></ion-icon></a></li>
+            <li><a href="#"><ion-icon name="logo-instagram"></ion-icon></a></li>
+            <li><a href="#"><ion-icon name="logo-whatsapp"></ion-icon></a></li>
+        </ul>
+
+        <p>©2024 DigitalPrint | Todos os direitos reservados</p>
+    </footer>
 </body>
 
 </html>

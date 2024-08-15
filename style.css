@@ -1,3 +1,8 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+
 /* CABECALHO */
 .cabecalho{
     margin-bottom: 200px;
@@ -19,7 +24,6 @@
 }
 
 #navbarDropdownMenuLink {
-
     background-color: #ffffff;
 
 }
@@ -147,15 +151,14 @@ span {
 /* RODAPÉ */
 footer {
     margin-top: 15%;
-    bottom: 0;
     width: 100%;
     background: #06a0f9;
-    height: 100px;
-    padding: 80px 50px;
+    height: 130px;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    padding: 12px;
 }
 
 footer .social_icon,
@@ -210,7 +213,6 @@ footer p {
 input[type=text], input[type=email], textarea{
     width: 100%;
     padding: 12px 0;
-    border: none;
     outline: none;
     font-weight: bold;
     margin-top: 6px;
@@ -223,7 +225,7 @@ input[type=text]:focus, input[type=text]:active{
     background: transparent;
 }
 
-.container {
+.ctt {
     width: min(1000px, 100%);
     display: flex;
     justify-content: center;
@@ -260,6 +262,7 @@ input[type=text]:focus, input[type=text]:active{
 .info .header{
     height: 20%;
     width: 100%;
+    color: white;
 }
 .info .body{
     height: 70px;
@@ -270,7 +273,7 @@ input[type=text]:focus, input[type=text]:active{
     height: 30px;
 }
 
-button {
+.ctt-btn button {
     display: inline-block;
     padding: 10px 20px;
     background-color: transparent;
@@ -281,18 +284,26 @@ button {
     transition: background-color 0.3s ease;
 }
 
-button:hover{
+.ctt-btn button:hover{
     background-color: red;
     color: black;
 }
-ul{
+.ul-ctt{
     list-style: none;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
 }
-ul li{
+.ul-ctt li{
     margin: 4% 0;
+}
+
+.ctt-span , .ctt-icon{
+    color: white;
+}
+
+.list a:hover{
+    color: white;
 }
 
 .list{
@@ -310,8 +321,7 @@ ul li{
     border: 1px solid black;
 }
 
-.container{
-    margin-top: 800px;
+.ctt{
     justify-content: center;
     align-items: center;
 }
