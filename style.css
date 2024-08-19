@@ -1,0 +1,348 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+
+/* CABECALHO */
+.cabecalho{
+    margin-bottom: 200px;
+}
+
+.cor_fonte {
+    color: black;
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.cabecalho img {
+    height: 120px;
+}
+
+.listas a:hover {
+    color: rgb(30, 98, 224);
+}
+
+#navbarDropdownMenuLink {
+    background-color: #ffffff;
+
+}
+
+nav {
+
+    border-bottom: 1px solid rgb(210, 211, 211);
+}
+
+/* Estilizando o link do dropdown */
+.nav-item.dropdown .nav-link {
+    color: black
+        /* Cor do texto */
+}
+
+/* Estilizando o link do dropdown quando o mouse passa por cima */
+.nav-item.dropdown .nav-link:hover {
+    color: rgb(30, 98, 224);
+    /* Cor do texto quando passa o mouse */
+}
+
+/* Estilizando o link do dropdown quando está aberto */
+.nav-item.dropdown .nav-link:focus,
+.nav-item.dropdown .nav-link:active {
+    color: rgb(30, 98, 224);
+    /* Cor do texto quando está aberto */
+}
+
+/* Estilizando o fundo do dropdown */
+.nav-item.dropdown .dropdown-menu {
+    background-color: white;
+    /* Cor de fundo do dropdown */
+}
+
+/* Estilizando os itens do dropdown */
+.nav-item.dropdown .dropdown-item {
+    color: black;
+    /* Cor do texto dos itens do dropdown */
+}
+
+/* Estilizando os itens do dropdown quando o mouse passa por cima */
+.nav-item.dropdown .dropdown-item:hover {
+    background-color: #F1F5F2;
+    /* Cor de fundo dos itens do dropdown quando passa o mouse */
+    color: rgb(30, 98, 224);
+    /* Cor do texto dos itens do dropdown quando passa o mouse */
+}
+
+/*--------------------------------------------------------------------------------------------*/
+/* PÁGINA SOBRE */
+
+.sobre img {
+    height: 230px;
+}
+
+.hist {
+    font-size: 24px;
+    text-align: justify;
+}
+
+span {
+    color: #06a0f9;
+}
+
+.sobre .title {
+    border-bottom: 2px solid #c3c3c3;
+    margin-top: 15%;
+}
+
+/*--------------------------------------------------------------------------------------------*/
+/* SEÇÃO DE IMAGENS */
+
+.columns{
+    margin-top: 5%;
+}
+
+.columns img {
+    height: 175px;
+}
+
+.columns h1 {
+    font-size: 60px;
+}
+
+.columns p {
+    font-size: 24px;
+}
+
+#colImg {
+    border-radius: 30px;
+    border: 1px solid #06a0f9;
+    padding: 20px;
+    margin: 40px;
+}
+
+.confira {
+    font-size: 26px;
+}
+
+/*-----------------------------------------------------------------------------------------*/
+/* SEÇÃO DO CARROSSEL */
+.carrossel {
+    margin-top: 7%;
+    padding: 25px;
+}
+
+.carousel-item {
+    justify-content: center;
+    align-items: center;
+}
+
+.carousel-item img {
+    height: 300px;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-color: #06a0f9;
+    border-radius: 45%;
+    width: 25px;
+    height: 25px;
+}
+
+/*-----------------------------------------------------------------------------------------*/
+/* RODAPÉ */
+footer {
+    margin-top: 15%;
+    width: 100%;
+    background: #06a0f9;
+    height: 130px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 12px;
+}
+
+footer .social_icon,
+.menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 0;
+    flex-wrap: wrap;
+}
+
+footer .social_icon li,
+.menu li {
+    list-style: none;
+}
+
+footer .social_icon li a {
+    font-size: 2em;
+    color: #ffffff;
+    margin: 0 10px;
+    display: inline-block;
+    transition: 0.5s;
+}
+
+footer .social_icon li a:hover {
+    transform: translateY(-10px);
+
+}
+
+footer .menu li a {
+    font-size: 1.2em;
+    color: #ffffff;
+    margin: 0 10px;
+    display: inline-block;
+    transition: 0.5s;
+    text-decoration: none;
+    opacity: 0.75;
+}
+
+footer .menu li a:hover {
+    opacity: 1;
+}
+
+footer p {
+    color: #ffffff;
+    text-align: center;
+    font-size: 1.1em;
+}
+
+/*-----------------------------------------------------------------------------------------*/
+/* CONTATO*/
+input[type=text], input[type=email], textarea{
+    width: 100%;
+    padding: 12px 0;
+    outline: none;
+    font-weight: bold;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: none;
+    border: 2px solid #1AA7E7;
+}
+
+input[type=text]:focus, input[type=text]:active{
+    background: transparent;
+}
+
+.ctt {
+    width: min(1000px, 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 650px;
+}
+
+.forms{
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    border: 2px solid #1AA7E7;
+    padding: 3%;
+    width: 50%;
+    height: 100%;
+}
+
+.forms input, textarea{
+    border-radius: 20px;
+    padding: 10px;
+}
+
+.info{
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    width: 50%;
+    height: 100%;
+    background-color:#1AA7E7;
+    padding: 4%;
+    
+}
+
+.info .header{
+    height: 20%;
+    width: 100%;
+    color: white;
+}
+.info .body{
+    height: 70px;
+    width: 100%;
+}
+.info img {
+    width: 30px;
+    height: 30px;
+}
+
+.ctt-btn button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: transparent;
+    color: #ffff;
+    font-size: 16px;
+    border: 1px solid#1AA7E7;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.ctt-btn button:hover{
+    background-color: red;
+    color: black;
+}
+.ul-ctt{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.ul-ctt li{
+    margin: 4% 0;
+}
+
+.ctt-span , .ctt-icon{
+    color: white;
+}
+
+.list a:hover{
+    color: white;
+}
+
+.list{
+    display: flex;
+    flex-direction: row;
+    font-size: 22px;
+    align-items: center;
+}
+
+.list img{
+    margin-right: 5%;
+    background-color: transparent;
+    padding: 1%;
+    border-radius: 100%;
+    border: 1px solid black;
+}
+
+.ctt{
+    justify-content: center;
+    align-items: center;
+}
+
+.limpar {
+    background-color: red ;
+    border-radius: 10px;
+    color: black;
+}
+.Enviar{
+    background-color: greenyellow ;
+    border-radius: 10px;
+    color: black;
+}
+
+.msg{
+    color: black;
+}
+
+.text{
+    margin-left: 10px;
+}
+
+.btn{
+    margin-top: 25px;
+}
