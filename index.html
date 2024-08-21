@@ -35,7 +35,7 @@
 
                 <ul class="navbar-nav ml-auto listas"> <!-- LISTAS DO MENU CABECALHO-->
 
-                    <li class="nav-item dropdown"> <!-- LINK BOOTSTRAP DORPDOWN MENU-->
+                    <!--<li class="nav-item dropdown">  LINK BOOTSTRAP DORPDOWN MENU
                         <a class="nav-link dropdown-toggle cor_fonte" href="#" id="navbarDropdownMenuLink"
                             data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                             Serviços
@@ -49,7 +49,7 @@
                             <a class="dropdown-item" href="#">Etiquetas</a>
                             <a class="dropdown-item" href="#">Crachás</a>
                         </div>
-                    </li> <!-- FECHA O DROPDOWN MENU-->
+                    </li>  FECHA O DROPDOWN MENU-->
                     <li class="nav-item">
                         <a href="about.html" class="nav-link cor_fonte">Sobre Nós</a>
                     </li>
@@ -65,38 +65,103 @@
 
     <!-- ESPAÇO PARA O CARROSSEL -->
     <article class="carrossel">
-        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-            <ol class="carousel-indicators">
-                <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-                <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-                <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-            </ol>
-            <div class="carousel-inner">
-                <div class="carousel-item active">
-                    <img class="img-fluid mx-auto d-block" src="./img/logoBranca.png" alt="First slide">
+        <div class="col-sm-3 col-md-12">
+            <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                <ol class="carousel-indicators">
+                    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                </ol>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img class="img-fluid mx-auto d-block" src="./img/logoBranca.png" alt="First slide">
+                    </div>
+                    <div class="carousel-item">
+                        <img class="img-fluid mx-auto d-block" src="./img/Dzao.png" alt="Second slide">
+                    </div>
+                    <div class="carousel-item">
+                        <img class="img-fluid mx-auto d-block" src="./img/logoPreta.png" alt="Third slide">
+                    </div>
                 </div>
-                <div class="carousel-item">
-                    <img class="img-fluid mx-auto d-block" src="./img/Dzao.png" alt="Second slide">
-                </div>
-                <div class="carousel-item">
-                    <img class="img-fluid mx-auto d-block" src="./img/logoPreta.png" alt="Third slide">
-                </div>
+                <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only"></span>
+                </a>
+                <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only"></span>
+                </a>
             </div>
-            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="sr-only"></span>
-            </a>
-            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-                <span class="carousel-control-next-icon bg-primary" aria-hidden="true"></span>
-                <span class="sr-only"></span>
-            </a>
         </div>
     </article>
     <!-- ESPAÇO PARA O CARROSSEL-->
 
+
+
+    <article class="cont">
+        <div class="col-12">
+            <h1 class="display-1">CONFIRA OS MAIS PEDIDOS!</h1>
+        </div>
+        <div class="row text-center justify-content-center">
+            <div class="col-md-6 col-sm-12">
+                <img src="./img/ad_mockup.png" class="cont-img">
+            </div>
+            <div class="col-md-6 col-sm-12 align-self-center text-center">
+                <h2 class="cont-h2 mb-4">ADESIVOS PERSONALIZADOS</h2>
+                <p class="cont-p ">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem natus mollitia blanditiis
+                    aliquam, quidem assumenda accusamus laboriosam ab nisi velit culpa, expedita, odit porro
+                    perspiciatis officia et itaque labore? Dolor!
+                </p>
+            </div>
+        </div>
+
+        <div class="row text-center justify-content-center">
+            <div class="col-md-6 col-sm-12">
+                <img src="./img/cartao_visita_mockup.png" class="cont-img">
+            </div>
+            <div class="col-md-6 col-sm-12 align-self-center text-center">
+                <h2 class="cont-h2 mb-4">CARTÕES DE VISITA PERSONALIZADOS</h2>
+                <p class="cont-p ">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem natus mollitia blanditiis
+                    aliquam, quidem assumenda accusamus laboriosam ab nisi velit culpa, expedita, odit porro
+                    perspiciatis officia et itaque labore? Dolor!
+                </p>
+            </div>
+        </div>
+        <div class="row text-center justify-content-center">
+            <div class="col-md-6 col-sm-12">
+                <img src="./img/panfleto_mockup.png" class="cont-img">
+            </div>
+            <div class="col-md-6 col-sm-12 align-self-center text-center">
+                <h2 class="cont-h2 mb-4">PANFLETOS PERSONALIZADOS</h2>
+                <p class="cont-p ">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem natus mollitia
+                    blanditiis
+                    aliquam, quidem assumenda accusamus laboriosam ab nisi velit culpa, expedita, odit porro
+                    perspiciatis officia et itaque labore? Dolor!
+                </p>
+            </div>
+        </div>
+        <div class="row text-center justify-content-center">
+            <div class="col-md-6 col-sm-12">
+                <img src="./img/logo.png" class="cont-img">
+            </div>
+            <div class="col-md-6 col-sm-12 align-self-center text-center">
+                <h2 class="cont-h2 mb-4">CIRAÇÃO DE LOGOS</h2>
+                <p class="cont-p ">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem natus mollitia
+                    blanditiis
+                    aliquam, quidem assumenda accusamus laboriosam ab nisi velit culpa, expedita, odit porro
+                    perspiciatis officia et itaque labore? Dolor!
+                </p>
+            </div>
+        </div>
+
+    </article>
     <!-- COLUNAS EXIB IMAGE-->
 
-    <article class="columns">
+    <!--<article class="columns">
         <div class="row justify-content-center text-center">
             <div class="col-12">
                 <h1 class="display-1">CONFIRA OS MAIS PEDIDOS!</h1>
@@ -147,7 +212,7 @@
     <article class="local">
 
     </article>
-
+-->
     <footer>
         <ul class="social_icon">
             <li><a href="#"><ion-icon name="logo-facebook"></ion-icon></a></li>

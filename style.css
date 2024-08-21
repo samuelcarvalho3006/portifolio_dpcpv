@@ -94,7 +94,32 @@ span {
 }
 
 /*--------------------------------------------------------------------------------------------*/
-/* SEÇÃO DE IMAGENS */
+/* SEÇÃO DE IMAGENS CONT*/
+
+.cont{
+    text-align: center;
+    margin-top: 5%;
+    .row{
+    border-top: 1px solid #06a0f9;
+    margin: 70px;
+    }
+}
+
+.cont-img{
+    height: 500px;
+}
+
+.cont-h2{
+    font-weight: bold;
+    color: #06a0f9;
+}
+
+.cont-p{
+    font-size: 26px;
+}
+
+/*--------------------------------------------------------------------------------------------*/
+/* SEÇÃO DE IMAGENS COLUMNS */
 
 .columns{
     margin-top: 5%;
