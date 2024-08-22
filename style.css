@@ -5,7 +5,7 @@
 
 /* CABECALHO */
 .cabecalho {
-    margin-bottom: 200px;
+    margin-bottom: 120px;
 }
 
 .cor_fonte {
@@ -126,7 +126,6 @@ span {
 /*-----------------------------------------------------------------------------------------*/
 /* SEÇÃO DO CARROSSEL */
 .carrossel {
-    margin-top: 7%;
     padding: 25px;
 }
 
