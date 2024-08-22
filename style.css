@@ -1,11 +1,27 @@
 * {
-    padding: 0px;
-    margin: 0px;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+main {
+    flex-grow: 1;
 }
 
 /* CABECALHO */
-.cabecalho {
-    margin-bottom: 138px;
+nav ul {
+    margin-right: 30px;
 }
 
 .cor_fonte {
@@ -17,6 +33,7 @@
 
 .cabecalho img {
     height: 120px;
+    margin-left: 30px;
 }
 
 .listas a:hover {
@@ -75,12 +92,16 @@ nav {
 /*--------------------------------------------------------------------------------------------*/
 /* PÁGINA SOBRE */
 
+.sobre {
+    margin: auto;
+}
+
 .sobre img {
-    height: 230px;
+    height: 330px;
 }
 
 .hist {
-    font-size: 24px;
+    font-size: 20px;
     text-align: justify;
 }
 
@@ -90,15 +111,10 @@ span {
 
 .sobre .title {
     border-bottom: 2px solid #c3c3c3;
-    margin-top: 15%;
 }
 
 /*--------------------------------------------------------------------------------------------*/
 /* SEÇÃO DE IMAGENS COLUMNS */
-
-.columns {
-    margin-top: 5%;
-}
 
 .columns img {
     height: 175px;
@@ -125,10 +141,6 @@ span {
 
 /*-----------------------------------------------------------------------------------------*/
 /* SEÇÃO DO CARROSSEL */
-.carrossel {
-    padding: 25px;
-}
-
 .carousel-item {
     justify-content: center;
     align-items: center;
@@ -146,10 +158,15 @@ span {
     height: 25px;
 }
 
+.carousel-inner {
+    height: 300px;
+}
+
+
 /*-----------------------------------------------------------------------------------------*/
 /* RODAPÉ */
 footer {
-    margin-top: 15%;
+    margin-top: auto;
     width: 100%;
     background: #06a0f9;
     height: 130px;
@@ -232,7 +249,8 @@ input[type=text]:active {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 650px;
+    height: 580px;
+    margin-top: auto;
 }
 
 .forms {
@@ -360,8 +378,8 @@ textarea {
 /* SEÇÃO DE IMAGENS CONT*/
 
 .cont {
-    text-align: center;
     margin-top: 5%;
+    text-align: center;
 
     .row {
         border-top: 1px solid #06a0f9;
