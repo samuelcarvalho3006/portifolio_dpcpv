@@ -93,8 +93,9 @@ nav {
 /* PÁGINA SOBRE */
 
 .sobre {
-    margin: auto;
+    margin-top: 2%;
 }
+
 
 .sobre img {
     height: 330px;
@@ -147,21 +148,19 @@ span {
 }
 
 .carousel-item img {
-    height: 300px;
+    min-height: 300px;
+    /* Altura mínima */
+    max-height: 600px;
+    /* Altura máxima */
+    width: 100%;
+    object-fit: cover;
 }
 
 .carousel-control-prev-icon,
 .carousel-control-next-icon {
-    background-color: #06a0f9;
-    border-radius: 45%;
     width: 25px;
     height: 25px;
 }
-
-.carousel-inner {
-    height: 300px;
-}
-
 
 /*-----------------------------------------------------------------------------------------*/
 /* RODAPÉ */
@@ -250,7 +249,7 @@ input[type=text]:active {
     justify-content: center;
     align-items: center;
     height: 580px;
-    margin-top: auto;
+    margin-top: 1.50%;
 }
 
 .forms {
@@ -398,4 +397,13 @@ textarea {
 
 .cont-p {
     font-size: 26px;
+}
+
+.contato button, .contato a{
+    font-size: 30px;
+    text-decoration: none;
+    color: white;
+    border-radius: 30px;
+    margin-bottom: 2%;
+    background-color: #06a0f9;
 }
