@@ -323,6 +323,7 @@ textarea {
 .ctt-span,
 .ctt-icon {
     color: white;
+    text-decoration: none;
 }
 
 .list a:hover {
