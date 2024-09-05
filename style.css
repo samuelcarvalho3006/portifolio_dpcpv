@@ -383,21 +383,20 @@ textarea {
 
     .row {
         border-top: 1px solid #06a0f9;
-        margin: 70px;
+        margin: 35px;
     }
 }
 
 .cont-img {
-    height: 500px;
-}
-
-.cont-h2 {
-    font-weight: bold;
-    color: #06a0f9;
+    height: 345px;
 }
 
 .cont-p {
-    font-size: 26px;
+    font-size: 16px;
+    color: #06a0f9;
+}
+.cont h5{
+
 }
 
 .contato button, .contato a{
