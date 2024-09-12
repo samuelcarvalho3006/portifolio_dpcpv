@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+ <!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -25,70 +25,37 @@
             </button>
 
             <div class="collapse navbar-collapse justify-content-end" id="navegacao">
-
-                <ul class="navbar-nav ml-auto listas"> <!-- LISTAS DO MENU CABECALHO-->
-
-                    <!--<li class="nav-item dropdown">  LINK BOOTSTRAP DORPDOWN MENU
-                        <a class="nav-link dropdown-toggle cor_fonte" href="#" id="navbarDropdownMenuLink"
-                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            Serviços
-                        </a>
-                        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                            <a class="dropdown-item" href="banners.html">Banners e Faixas</a>
-                            <a class="dropdown-item" href="#">Adesivos</a>
-                            <a class="dropdown-item" href="#">Fachadas</a>
-                            <a class="dropdown-item" href="#">Panfletos</a>
-                            <a class="dropdown-item" href="#">Cartões de Visita</a>
-                            <a class="dropdown-item" href="#">Etiquetas</a>
-                            <a class="dropdown-item" href="#">Crachás</a>
-                        </div>
-                    </li>  FECHA O DROPDOWN MENU-->
-                    <li class="nav-item">
-                        <a href="serviços.html" class="nav-link cor_fonte">Serviços</a>
-                    </li>
+                <ul class="navbar-nav ml-auto listas">
                     <li class="nav-item">
                         <a href="about.html" class="nav-link cor_fonte">Sobre Nós</a>
                     </li>
                     <li class="nav-item">
                         <a href="ctt.html" class="nav-link cor_fonte">Contato</a>
                     </li>
-
-                </ul> <!-- FECHA LISTAS MENU CABECALHO -->
+                </ul>
             </div>
-
-        </nav> <!-- FECHA CABECALHO -->
-    </div> <!-- FECHA CONTAINER DO CABECALHO -->
+        </nav>
+    </div>
 
     <div class="container ctt">
         <div class="forms">
             <h2 class="msg" style="margin-bottom: 5%">Mensagem</h2>
             <p class="msg">Envie uma mensagem caso tenha alguma dúvida.</p>
-            <form>
-                <input type="text" name="name" id="name" placeholder="Nome"><br>
-                <input type="email" name="email" id="email" placeholder="Email"><br>
-                <textarea name="message" id="messge" placeholder="Escreva aqui..." style="height: 200px;"></textarea>
+            <form id="contact-form">
+                <input type="text" name="name" id="nameInput" placeholder="Nome" required><br>
+                <input type="email" name="email" id="emailInput" placeholder="Email" required><br>
+                <textarea name="message" id="messageInput" placeholder="Escreva aqui..." style="height: 200px;"
+                    required></textarea>
                 <div class="row text-center justify-content-center">
                     <div class="col-6">
-                        <button class="btn btn-outline-danger ctt-btn" type="submit">Limpar</button>
+                        <button class="btn btn-outline-danger ctt-btn" type="button"
+                            onclick="clearText()">Limpar</button>
                     </div>
                     <div class="col-6">
-                        <button class="btn btn-outline-success ctt-btn" type="submit">Enviar</button>
+                        <button class="btn btn-outline-success ctt-btn" onclick="sendEmail" type="submit">Enviar</button>
                     </div>
                 </div>
             </form>
-        </div>
-
-        <div class="info">
-            <div class="header">
-                <h1 style="margin-bottom: 3%;">AVISO</h1>
-            </div>
-            <div class="body">
-                <p>Caso necessite de um contato com maior urgência, entre em contato utilizando o link para o whatsapp,
-                    instagram ou facebook localizados no rodapé, a velocidade de resposta leva em consideração a
-                    quantidade de pessoas que entrarem em contato, que serão respondidas de acordo com quem tenha
-                    entrado em contato primeiro.
-                </p>
-            </div>
         </div>
     </div>
 
@@ -99,13 +66,21 @@
             <li><a href="https://wa.me/5512991671420?text=Ol%C3%A1!%20Gostaria%20de%20fazer%20um%20pedido."><ion-icon
                         name="logo-whatsapp"></ion-icon></a></li>
         </ul>
-
         <p>©2024 DigitalPrint | Todos os direitos reservados</p>
     </footer>
 
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.7/dist/umd/popper.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
+
+    <script>
+        function clearText() {
+            document.getElementById("nameInput").value = "";
+            document.getElementById("emailInput").value = "";
+            document.getElementById("messageInput").value = "";
+        }
+    </script>
+
 </body>
 
 </html>
