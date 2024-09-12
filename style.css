@@ -253,7 +253,7 @@ input[type=text]:active {
 }
 
 .forms {
-    border-top-left-radius: 20px;
+    border-radius: 20px;
     border-bottom-left-radius: 20px;
     border: 2px solid #1AA7E7;
     padding: 3%;
@@ -265,84 +265,6 @@ input[type=text]:active {
 textarea {
     border-radius: 20px;
     padding: 10px;
-}
-
-.info {
-    border-top-right-radius: 20px;
-    border-bottom-right-radius: 20px;
-    width: 50%;
-    height: 100%;
-    background-color: #1AA7E7;
-    padding: 4%;
-
-}
-
-.info .header {
-    height: 20%;
-    width: 100%;
-    color: white;
-}
-
-.info .body {
-    height: 70px;
-    width: 100%;
-}
-
-.info img {
-    width: 30px;
-    height: 30px;
-}
-
-.ctt-btn button {
-    display: inline-block;
-    padding: 10px 20px;
-    background-color: transparent;
-    color: #ffff;
-    font-size: 16px;
-    border: 1px solid#1AA7E7;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-}
-
-.ctt-btn button:hover {
-    background-color: red;
-    color: black;
-}
-
-.ul-ctt {
-    list-style: none;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-}
-
-.ul-ctt li {
-    margin: 4% 0;
-}
-
-.ctt-span,
-.ctt-icon {
-    color: white;
-    text-decoration: none;
-}
-
-.list a:hover {
-    color: white;
-}
-
-.list {
-    display: flex;
-    flex-direction: row;
-    font-size: 22px;
-    align-items: center;
-}
-
-.list img {
-    margin-right: 5%;
-    background-color: transparent;
-    padding: 1%;
-    border-radius: 100%;
-    border: 1px solid black;
 }
 
 .ctt {
@@ -380,36 +302,7 @@ color: #ffffff;
 font-family: Arial;
 }
 
-/*--------------------------------------------------------------------------------------------*/
-/* SEÇÃO DE IMAGENS CONT*/
-
-.cont {
-    margin-top: 5%;
-    text-align: center;
-
-    .row {
-        border-top: 1px solid #06a0f9;
-        margin: 35px;
-    }
-}
-
-.cont-img {
-    height: 345px;
-}
-
-.cont-p {
-    font-size: 16px;
-    color: #06a0f9;
-}
-.cont h5{
-
-}
-
-.contato button, .contato a{
-    font-size: 30px;
-    text-decoration: none;
-    color: white;
-    border-radius: 30px;
-    margin-bottom: 2%;
-    background-color: #06a0f9;
+.ctt-btn {
+    width: 220px;
+    margin-top: 10px;
 }
