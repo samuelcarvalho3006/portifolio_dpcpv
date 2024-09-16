@@ -131,14 +131,23 @@ span {
 
 #colImg {
     border-radius: 30px;
-    border: 1px solid #06a0f9;
     padding: 20px;
     margin: 40px;
+    box-shadow: 6px 10px 18px rgba(150, 189, 192, 0.6);
+    transition: transform 0.2s ease-in-out;
 }
+
+#colImg:hover {
+    transform: scale(1.1);
+    font-size: 25px;
+}
+
 
 .confira {
     font-size: 26px;
 }
+
+
 
 /*-----------------------------------------------------------------------------------------*/
 /* SEÇÃO DO CARROSSEL */
@@ -297,12 +306,26 @@ textarea {
 }
 
 .body p {
-font-size: 21px;
-color: #ffffff;
-font-family: Arial;
+    font-size: 21px;
+    color: #ffffff;
+    font-family: Arial;
 }
 
 .ctt-btn {
-    width: 220px;
+    width: 200px;
     margin-top: 10px;
+}
+
+/*Estilizando área de serviços*/
+
+.service {
+    border-radius: 10px;
+    padding: 40px;
+    box-shadow: 6px 10px 18px rgba(150, 189, 192, 0.6);
+    transition: transform 0.2s ease-in-out;
+}
+
+.service:hover {
+    transform: scale(1.1);
+    font-size: 18px;
 }
