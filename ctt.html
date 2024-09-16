@@ -41,7 +41,7 @@
         <div class="forms">
             <h2 class="msg" style="margin-bottom: 5%">Mensagem</h2>
             <p class="msg">Envie uma mensagem caso tenha alguma dúvida.</p>
-            <form id="contact-form">
+            <form action="sendEmail.php" method="POST" id="contact-form">
                 <input type="text" name="name" id="nameInput" placeholder="Nome" required><br>
                 <input type="email" name="email" id="emailInput" placeholder="Email" required><br>
                 <textarea name="message" id="messageInput" placeholder="Escreva aqui..." style="height: 200px;"
