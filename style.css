@@ -133,13 +133,15 @@ span {
     border-radius: 30px;
     padding: 20px;
     margin: 40px;
-    box-shadow: 6px 10px 18px rgba(150, 189, 192, 0.6);
-    transition: transform 0.2s ease-in-out;
+    box-shadow: 5px 10px 18px rgba(0, 0, 0, 0.6);
+    transition: transform 0.2s ease-in-out, font-size 0.5s ease-in-out, box-shadow 0.8s ease-in-out;
+    cursor: pointer;
 }
 
 #colImg:hover {
     transform: scale(1.1);
     font-size: 25px;
+    box-shadow: 5px 10px 18px rgba(54, 235, 248, 0.6);
 }
 
 
@@ -209,7 +211,6 @@ footer .social_icon li a {
 
 footer .social_icon li a:hover {
     transform: translateY(-10px);
-
 }
 
 footer .menu li a {
@@ -337,4 +338,5 @@ textarea {
 .prin {
     margin-bottom: 80px;
 }
+
 /*fim*/
