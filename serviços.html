@@ -56,25 +56,13 @@
             <a class="navbar-brand m-2" href="index.html">
                 <img src="./img/logoPreta.png">
             </a>
-
-            <!-- Menu Hamburguer -->
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navegacao">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-
             <div class="collapse navbar-collapse justify-content-end" id="navegacao">
-                <ul class="navbar-nav ml-auto listas">
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle cor_fonte" href="#" id="navbarDropdown" role="button"
-                            data-bs-toggle="dropdown" aria-expanded="false">
-                            Serviços
+
+                <ul class="navbar-nav ml-auto listas"> <!-- LISTAS DO MENU CABECALHO-->
+                    <li class="nav-item">
+                        <a class="serv nav-link cor_fonte"><button class="serv"
+                                style="border: none; background: none; font-weight: bold;">Serviços</button>
                         </a>
-                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <li><a class="dropdown-item" href="#" data-filter="all">Todos os Serviços</a></li>
-                            <li><a class="dropdown-item" href="#" data-filter="adesivo">Adesivos</a></li>
-                            <li><a class="dropdown-item" href="#" data-filter="cartao">Cartão de Visitas</a></li>
-                            <li><a class="dropdown-item" href="#" data-filter="panfleto">Panfletos</a></li>
-                        </ul>
                     </li>
                     <li class="nav-item">
                         <a href="about.html" class="nav-link cor_fonte">Sobre Nós</a>
@@ -82,10 +70,24 @@
                     <li class="nav-item">
                         <a href="ctt.html" class="nav-link cor_fonte">Contato</a>
                     </li>
-                </ul>
+                </ul> <!-- FECHA LISTAS MENU CABECALHO -->
             </div>
-        </nav>
+
+        </nav> <!-- FECHA CABECALHO -->
+    </div> <!-- FECHA CONTAINER DO CABECALHO -->
+    <br>
+    <div class="row">
+        <div class="servicos col-xl-1 text-center" style="display: none; background: #f5f5f5;">
+            <button class="" style="border: none; background: #f5f5f5;">Todos os Serviços</button>
+            <br>
+            <button class="" style="border: none; background: #f5f5f5;">Adesivos</button>
+            <br>
+            <button class="" style="border: none; background: #f5f5f5;">Cartões</button>
+            <br>
+            <button class="" style="border: none; background: #f5f5f5;">Panfletos</button>
+        </div>
     </div>
+    <br>
 
     <article class="container prin">
         <div class="row justify-content-center text-center">
@@ -461,27 +463,6 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 
     <script>
-        document.querySelectorAll('.dropdown-item[data-filter]').forEach(link => {
-            link.addEventListener('click', function (event) {
-                event.preventDefault();
-
-                const filter = this.getAttribute('data-filter');
-                const services = document.querySelectorAll('.service');
-
-                services.forEach(service => {
-                    if (filter === 'all') {
-                        service.style.display = 'block';  // Exibe todos
-                    } else if (service.classList.contains(filter)) {
-                        service.style.display = 'block';  // Exibe o serviço filtrado
-                    } else {
-                        service.style.display = 'none';   // Esconde os outros
-                    }
-                });
-            });
-        });
-    </script>
-
-    <script>
         // Exibir o artigo oculto ao clicar no botão de adesivo e ocultar o artigo principal
         document.querySelectorAll('.btn-adesivo').forEach(button => {
             button.addEventListener('click', () => {
@@ -535,6 +516,15 @@
         });
     </script>
 
+    <script>
+        // Exibir o artigo oculto ao clicar no botão de cartão e ocultar o artigo principal
+        document.querySelectorAll('.serv').forEach(button => {
+            button.addEventListener('click', () => {
+                // Exibe o elemento com a classe 'servicos'
+                document.querySelector('div.servicos').style.display = 'block';
+            });
+        });
+    </script>
 </body>
 
 </html>

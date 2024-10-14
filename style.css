@@ -339,4 +339,8 @@ textarea {
     margin-bottom: 80px;
 }
 
+.serv:hover {
+    color: rgb(30, 98, 224);
+}
+
 /*fim*/
