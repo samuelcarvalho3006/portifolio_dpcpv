@@ -343,4 +343,9 @@ textarea {
     color: rgb(30, 98, 224);
 }
 
+.servicos {
+    position: absolute;
+    transform: translateX(986%) translateY(-26%);
+}
+
 /*fim*/
