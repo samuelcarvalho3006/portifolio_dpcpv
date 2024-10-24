@@ -10,6 +10,8 @@
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
     <link rel="stylesheet" href="style.css">
     <link rel="icon" href="./img/Dzao.png">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
 
     <style>
         .service {
@@ -41,11 +43,6 @@
             font-size: 1.5rem;
             margin-right: 15px;
         }
-
-        footer {
-            margin-top: 50px;
-            text-align: center;
-        }
     </style>
 </head>
 
@@ -57,24 +54,13 @@
                 <img src="./img/logoPreta.png">
             </a>
 
-            <!-- Menu Hamburguer -->
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navegacao">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-
             <div class="collapse navbar-collapse justify-content-end" id="navegacao">
-                <ul class="navbar-nav ml-auto listas">
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle cor_fonte" href="#" id="navbarDropdown" role="button"
-                            data-bs-toggle="dropdown" aria-expanded="false">
-                            Serviços
+
+                <ul class="navbar-nav ml-auto listas"> <!-- LISTAS DO MENU CABECALHO-->
+                    <li class="nav-item">
+                        <a class="serv nav-link cor_fonte"><button class="serv"
+                                style="border: none; background: none; font-weight: bold;">Serviços</button>
                         </a>
-                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <li><a class="dropdown-item" href="#" data-filter="all">Todos os Serviços</a></li>
-                            <li><a class="dropdown-item" href="#" data-filter="adesivo">Adesivos</a></li>
-                            <li><a class="dropdown-item" href="#" data-filter="cartao">Cartão de Visitas</a></li>
-                            <li><a class="dropdown-item" href="#" data-filter="panfleto">Panfletos</a></li>
-                        </ul>
                     </li>
                     <li class="nav-item">
                         <a href="about.html" class="nav-link cor_fonte">Sobre Nós</a>
@@ -82,10 +68,24 @@
                     <li class="nav-item">
                         <a href="ctt.html" class="nav-link cor_fonte">Contato</a>
                     </li>
-                </ul>
+                </ul> <!-- FECHA LISTAS MENU CABECALHO -->
             </div>
-        </nav>
+
+        </nav> <!-- FECHA CABECALHO -->
+    </div> <!-- FECHA CONTAINER DO CABECALHO -->
+    <br>
+    <div class="row">
+        <div class="servicos col-1 text-center" style="display: none; background: #f5f5f5;">
+            <button class="" style="border: none; background: #f5f5f5;">Todos os Serviços</button>
+            <br>
+            <button class="" style="border: none; background: #f5f5f5;">Adesivos</button>
+            <br>
+            <button class="" style="border: none; background: #f5f5f5;">Cartões</button>
+            <br>
+            <button class="" style="border: none; background: #f5f5f5;">Panfletos</button>
+        </div>
     </div>
+    <br>
 
     <article class="container prin">
         <div class="row justify-content-center text-center">
@@ -176,9 +176,9 @@
                     ADESIVOS!</h1>
             </div>
             <br>
-            <div class="col-12 col-md-6 col-sm-6">
+            <div class="col-12 d-flex justify-content-end">
                 <button class="btn-voltar btn btn-outline-danger" style="font-size: 20px; width: auto;">
-                </button>
+                    x </button>
             </div>
         </div>
         <div class="row justify-content-center text-center">
@@ -269,9 +269,9 @@
                     CARTÕES!</h1>
             </div>
             <br>
-            <div class="col-12 col-md-6 col-sm-6">
+            <div class="col-12 d-flex justify-content-end">
                 <button class="btn-voltar btn btn-outline-danger" style="font-size: 20px; width: auto;">
-                </button>
+                    x </button>
             </div>
         </div>
         <div class="row justify-content-center text-center">
@@ -362,9 +362,9 @@
                     PANFLETOS!</h1>
             </div>
             <br>
-            <div class="col-12 col-md-6 col-sm-6">
+            <div class="col-12 d-flex justify-content-end">
                 <button class="btn-voltar btn btn-outline-danger" style="font-size: 20px; width: auto;">
-                </button>
+                    x </button>
             </div>
         </div>
         <div class="row justify-content-center text-center">
@@ -448,38 +448,64 @@
     </article>
 
     <footer>
-        <ul class="social_icon">
-            <li><a href="#"><ion-icon name="logo-facebook"></ion-icon></a></li>
-            <li><a href="#"><ion-icon name="logo-instagram"></ion-icon></a></li>
-            <li><a href="https://wa.me/5512991671420?text=Ol%C3%A1!%20Gostaria%20de%20fazer%20um%20pedido."><ion-icon
-                        name="logo-whatsapp"></ion-icon></a></li>
-        </ul>
-        <p>©2024 DigitalPrint | Todos os direitos reservados</p>
+        <div id="footer_content">
+            <div id="footer_contacts">
+                <h1><a href="index.html"><img src="img/Dzao.png" height="80px"></a></h1>
+                <p>It's all about your dreams</p>
+            </div>
+
+            <ul class="footer-list">
+                <li>
+                    <h3>Blog</h3>
+                </li>
+                <li>
+                    <a href="#" class="footer-link">Tech</a>
+                </li>
+                <li>
+                    <a href="#" class="footer-link">Adventures</a>
+                </li>
+                <li>
+                    <a href="#" class="footer-link">Music</a>
+                </li>
+            </ul>
+
+            <ul class="footer-list">
+                <li>
+                    <h3>Blog</h3>
+                </li>
+                <li>
+                    <a href="#" class="footer-link">App</a>
+                </li>
+                <li>
+                    <a href="#" class="footer-link">Desktop</a>
+                </li>
+                <li>
+                    <a href="#" class="footer-link">Cloud</a>
+                </li>
+            </ul>
+
+            <div id="footer_contacts">
+
+                <div id="footer_social_media">
+                    <a href="https://www.instagram.com/digitalprintcpv?igsh=MW11azY2OTl6bXBvdw==" target="_blank" class="footer_link" id="instagram">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+                    <a href="https://wa.me/5512991671420?text=Ol%C3%A1!%20Gostaria%20de%20fazer%20um%20pedido."
+                        class="footer_link" target="_blank" id="whatsapp">
+                        <i class="fa-brands fa-whatsapp"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div id="footer_copyright">
+            &#169
+            2024 all rights reservet
+        </div>
     </footer>
 
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-
-    <script>
-        document.querySelectorAll('.dropdown-item[data-filter]').forEach(link => {
-            link.addEventListener('click', function (event) {
-                event.preventDefault();
-
-                const filter = this.getAttribute('data-filter');
-                const services = document.querySelectorAll('.service');
-
-                services.forEach(service => {
-                    if (filter === 'all') {
-                        service.style.display = 'block';  // Exibe todos
-                    } else if (service.classList.contains(filter)) {
-                        service.style.display = 'block';  // Exibe o serviço filtrado
-                    } else {
-                        service.style.display = 'none';   // Esconde os outros
-                    }
-                });
-            });
-        });
-    </script>
 
     <script>
         // Exibir o artigo oculto ao clicar no botão de adesivo e ocultar o artigo principal
@@ -535,6 +561,23 @@
         });
     </script>
 
+    <script>
+        // Exibir o artigo oculto ao clicar no botão de cartão e ocultar o artigo principal
+        document.querySelectorAll('.serv').forEach(button => {
+            button.addEventListener('click', () => {
+                // Exibe o elemento com a classe 'servicos'
+                document.querySelector('div.servicos').style.display = 'block';
+            });
+        });
+    </script>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="js/bootstrap.min.js"></script>
 </body>
 
 </html>

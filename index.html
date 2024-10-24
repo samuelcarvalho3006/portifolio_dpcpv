@@ -8,20 +8,23 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css?v=1.3">
     <link rel="icon" href="./img/Dzao.png">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 </head>
 
 <body>
 
     <div class="container-fluid cabecalho">
-        <nav class="navbar navbar-expand-md" style="background-color: #FFFF;">
+        <nav class="navbar navbar-expand-md fixed-top " style="background-color: #FFFF;">
             <a class="navbar-brand m-2" href="index.html">
                 <img src="./img/logoPreta.png">
             </a>
 
             <!-- Menu Hamburguer -->
-            <button class="navbar-toggler hamburguer" data-bs-toggle="collapse" data-bs-target="#navegacao">
+            <button class="navbar-toggler" data-toggle="collapse" data-target="#navegacao">
                 <span class="navbar-toggler-icon"></span>
             </button>
 
@@ -62,7 +65,7 @@
 
     <!-- ESPAÇO PARA O CARROSSEL -->
     <article class="carrossel">
-        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+        <div id="carouselExampleIndicators" class="carousel slide d-none d-md-block" data-bs-ride="carousel">
             <div class="carousel-inner">
                 <div class="carousel-item active">
                     <div class="col-12 banner-1 align-self-center text-center">
@@ -87,102 +90,348 @@
 
     <!--COLUNAS EXIB IMAGE-->
 
-    <article class="columns ">
-        <div class="row justify-content-center text-center">
-            <div class="col-12 cont">
-                <h1 class="display-5 cont" style="margin-top: 50px;">CONFIRA OS MAIS PEDIDOS!</h1>
-            </div>
-        </div>
-        <br>
-        <div class="row justify-content-center text-center">
-            <div class="col-xl-2 col-md-4 col-sm-12" id="colImg">
-                <img src="./img/ad_mockup.png" class=" cont img-fluid" alt="Imagem">
-                <p class=" cont-p">
-                    ADESIVO PERSONALIZADO <br>
-                </p>
-                <button class="btn btn-outline-primary">VEJA MAIS</button>
-            </div>
-            <div class="col-xl-2 col-md-4 col-sm-12" id="colImg">
-                <img src="./img/cartao_visita_mockup.png" class=" cont img-fluid" alt="Imagem">
-                <p class=" cont-p">
-                    CARTÃO DE VISITAS <br>
-                </p>
-                <button class="btn btn-outline-primary">VEJA MAIS</button>
-            </div>
-            <div class="col-xl-2 col-md-4 col-sm-12" id="colImg">
-                <img src="./img/panfleto_mockup.png" class=" cont img-fluid" alt="Imagem">
-                <p class=" cont-p">
-                    PANFLETO <br>
-                </p>
-                <button class="btn btn-outline-primary">VEJA MAIS</button>
-            </div>
-            <div class="col-xl-2 col-md-4 col-sm-12" id="colImg">
-                <img src="./img/Dzao.png" class=" cont img-fluid" alt="Imagem">
-                <p class=" cont-p">
-                    D PERSONAL <br>
-                </p>
-                <button class="btn btn-outline-primary">VEJA MAIS</button>
-            </div> 
-
+    <article class="columns">
+        <div class="produtos">
             <div class="row justify-content-center text-center">
-                <div class="col-xl-2 col-md-4 col-sm-12" id="colImg">
+                <div class="col-12 cont">
+                    <h1 class="display-5 cont" style="margin-top: 50px;">CONFIRA OS MAIS PEDIDOS!</h1>
+                </div>
+            </div>
+            <br>
+            <div class="row justify-content-center text-center">
+                <div class="col-xl-2 col-md-4 col-sm-12" id="colImg" style="border: none; background: none;">
                     <img src="./img/ad_mockup.png" class=" cont img-fluid" alt="Imagem">
-                    <p class=" cont-p">
+                    <p class="cont-p mt-5" style="font-size: 21px;">
                         ADESIVO PERSONALIZADO <br>
                     </p>
-                    <button class="btn btn-outline-primary">VEJA MAIS</button>
+                    <button class="btn btn-outline-primary p-2" mb-3 style="width:75%;">Ver Mais!</button>
                 </div>
-                <div class="col-xl-2 col-md-4 col-sm-12" id="colImg">
+                <div class="col-xl-2 col-md-4 col-sm-12" id="colImg" style="border: none; background: none;">
                     <img src="./img/cartao_visita_mockup.png" class=" cont img-fluid" alt="Imagem">
-                    <p class=" cont-p">
+                    <p class="cont-p mt-5" style="font-size: 21px;">
                         CARTÃO DE VISITAS <br>
                     </p>
-                    <button class="btn btn-outline-primary">VEJA MAIS</button>
+                    <button class="btn btn-outline-primary p-2" mb-3 style="width:75%;">Ver Mais!</button>
                 </div>
-                <div class="col-xl-2 col-md-4 col-sm-12" id="colImg">
+                <div class="col-xl-2 col-md-4 col-sm-12" id="colImg" style="border: none; background: none;">
                     <img src="./img/panfleto_mockup.png" class=" cont img-fluid" alt="Imagem">
-                    <p class=" cont-p">
+                    <p class="cont-p mt-5" style="font-size: 21px;">
                         PANFLETO <br>
                     </p>
-                    <button class="btn btn-outline-primary">VEJA MAIS</button>
+                    <button class="btn btn-outline-primary p-2" mb-3 style="width:75%;">Ver Mais!</button>
                 </div>
-                <div class="col-xl-2 col-md-4 col-sm-12" id="colImg">
+                <div class="col-xl-2 col-md-4 col-sm-12" id="colImg" style="border: none; background: none;">
                     <img src="./img/Dzao.png" class=" cont img-fluid" alt="Imagem">
-                    <p class=" cont-p">
+                    <p class="cont-p mt-5" style="font-size: 21px;">
                         D PERSONAL <br>
                     </p>
-                    <button class="btn btn-outline-primary">VEJA MAIS</button>
-                </div> 
-              
-        </div>
-        <div class="row justify-content-center text-center">
-            <div class="col-12">
-                <button class="btn btn-outline-primary confira cont" onclick="window.location.href='serviços.html'" style="margin-bottom: 50px;">CONFIRA TODOS OS SERVIÇOS</button>
+                    <button class="btn btn-outline-primary p-2 mb-3" style="width:75%;">Ver Mais!</button>
+                </div>
+                <div class="col-xl-2 col-md-4 col-sm-12" id="colImg" style="border: none; background: none;">
+                    <img src="./img/ad_mockup.png" class=" cont img-fluid" alt="Imagem">
+                    <p class="cont-p mt-5" style="font-size: 21px;">
+                        ADESIVO PERSONALIZADO <br>
+                    </p>
+                    <button class="btn btn-outline-primary p-2 mb-3" style="width:75%;">Ver Mais!</button>
+                </div>
+                <div class="col-xl-2 col-md-4 col-sm-12" id="colImg" style="border: none; background: none;">
+                    <img src="./img/cartao_visita_mockup.png" class=" cont img-fluid" alt="Imagem">
+                    <p class="cont-p mt-5" style="font-size: 21px;">
+                        CARTÃO DE VISITAS <br>
+                    </p>
+                    <button class="btn btn-outline-primary p-2 mb-3" style="width:75%;">Ver Mais!</button>
+                </div>
+                <div class="col-xl-2 col-md-4 col-sm-12" id="colImg" style="border: none; background: none;">
+                    <img src="./img/panfleto_mockup.png" class=" cont img-fluid" alt="Imagem">
+                    <p class="cont-p mt-5" style="font-size: 21px;">
+                        PANFLETO <br>
+                    </p>
+                    <button class="btn btn-outline-primary p-2 mb-3" style="width:75%;">Ver Mais!</button>
+                </div>
+                <div class="col-xl-2 col-md-4 col-sm-12" id="colImg" style="border: none; background: none;">
+                    <img src="./img/Dzao.png" class=" cont img-fluid" alt="Imagem">
+                    <p class="cont-p mt-5" style="font-size: 21px;">
+                        D PERSONAL <br>
+                    </p>
+                    <button class="btn btn-outline-primary p-2 mb-3" style="width:75%;">Ver Mais!</button>
+                </div>
             </div>
         </div>
 
+        <!--Coluna Mini Galeria-->
 
-        
+        <hr class="linha">
+
+        <section class="hidden">
+            <article class="columns">
+                <div class="row justify-content-center text-center">
+                    <div class="col-12 cont">
+                        <h1 class="display-5 cont" style="margin-top: 65px; margin-bottom: 65px;">VEJA NOSSO TRABALHO!</h1>
+                    </div>
+                </div>
+            </article>
+        </section>
+
+        <section class="slider_container hidden">
+
+        </section>
+
+        <!--Fim desse conteudo-->
+
+        <!--Coluna Mini Galeria-->
+
+        <div class="kodfun-galeri hidden">
+            <div style="background-image: url('img/cartaz2.jpeg');" class="img_foto" ></div>
+            <div style="background-image: url('img/cartaz3.jpeg');" class="img_foto"></div>
+            <div style="background-image: url('img/cartaz4.jpeg');" class="img_foto"></div>
+            <div style="background-image: url('img/cartaz5.jpeg');" class="img_foto"></div>
+            <div style="background-image: url('img/cartaz6.jpeg');" class="img_foto"></div>
+            <div style="background-image: url('img/cartaz7.jpeg');" class="img_foto"></div>
+        </div>
+
+        <!--Coluna das Imagens e Textos-->
+
+        <section class="hidden">
+            <div class="Home">
+                <article class="caixa">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-6 d-flex">
+                                <div class="align-self-center">
+                                    <h2 class="titulo_conteudo">Titulo</h2>
+                                    <p class="text_conteudo">
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem provident
+                                        omnis
+                                        voluptates soluta debitis beatae, impedit perferendis ea consequuntur nihil
+                                        eaque
+                                        doloribus excepturi, officiis, aliquam blanditiis expedita quod numquam
+                                        aperiam?
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <img src="img/Dzao.png" class="img_conteudo d-none d-md-block">
+                            </div>
+                        </div>
+                    </div>
+                </article>
+            </div>
+
+            <hr class="linha">
+
+            <div class="Home">
+                <article class="caixa">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="card-image tilt"
+                                    style="transform: perspective(4000px) rotateX(0deg) rotateY(0deg) scale3d(1, 1, 1);">
+                                    <img src="img/Dzao.png" class="img_conteudo d-none d-md-block">
+                                </div>
+                            </div>
+                            <div class="col-md-6 d-flex">
+                                <div class="align-self-center">
+                                    <h2 class="titulo_conteudo">Titulo</h2>
+                                    <p class="text_conteudo">
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia, alias
+                                        illum
+                                        distinctio
+                                        explicabo ipsa dignissimos. Magnam quam repellat autem provident. Eligendi
+                                        facilis
+                                        id
+                                        odio maxime omnis magnam quas placeat modi?
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+            </div>
+
+            <hr class="linha">
+
+            <!--Cartão e Localização-->
+
+            <article class="columns">
+                <div class="row justify-content-center text-center">
+                    <div class="col-12 cont">
+                        <h1 class="display-5 cont" style="margin-top: 50px;">VENHA NOS CONHECER!</h1>
+                    </div>
+                </div>
+            </article>
+
+            <div class="container_cartão">
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="card">
+                            <img src="img/Dzao.png" class="card-img-top" alt="Produto 1">
+                            <div class="card-body">
+                                <h5 class="card-title">Guaratingueta</h5>
+                                <p class="card-text">Conheça nossa unidade em Guaratingueta.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card">
+                            <img src="img/Dzao.png" class="card-img-top" alt="Produto 2">
+                            <div class="card-body">
+                                <h5 class="card-title">Caçapava</h5>
+                                <p class="card-text">Conheça nossa sede em Caçapava.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card">
+                            <img src="img/Dzao.png" class="card-img-top" alt="Produto 3">
+                            <div class="card-body">
+                                <h5 class="card-title">Mídia Digital</h5>
+                                <p class="card-text">Cobertura de mídia digital.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        </div>
     </article>
 
-    <article class="local">
+    <!--Fim desse conteudo-->
 
-    </article>
-    <footer>
-        <ul class="social_icon">
-            <li><a href="#"><ion-icon name="logo-facebook"></ion-icon></a></li>
-            <li><a href="#"><ion-icon name="logo-instagram"></ion-icon></a></li>
-            <li><a href="https://wa.me/5512991671420?text=Ol%C3%A1!%20Gostaria%20de%20fazer%20um%20pedido."><ion-icon
-                        name="logo-whatsapp"></ion-icon></a></li>
-        </ul>
+    <!--Coluna da Localização-->
 
-        <p>©2024 DigitalPrint | Todos os direitos reservados</p>
+    <section class="mapa">
+        <br>
+        <iframe class=" col-sm-9 Localização"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3669.7805413718193!2d-45.70826989999999!3d-23.1051282!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94cc517bbfeb7107%3A0x5369de60079c1385!2sR.%20Cel.%20Jo%C3%A3o%20Dias%20Guimar%C3%A3es%2C%20300%20-%20Vila%20Sao%20Joao%2C%20Ca%C3%A7apava%20-%20SP%2C%2012281-350!5e0!3m2!1spt-BR!2sbr!4v1729358111770!5m2!1spt-BR!2sbr"
+            width="1300" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </section>
+
+    </div>
+    <!--Fim desse conteudo-->
+
+    <footer class="footer_principal">
+        <div id="footer_content">
+            <div id="footer_contacts">
+                <h1><a href="#"><img src="img/Dzao.png" height="80px"></a></h1>
+                <p>It's all about your dreams</p>
+            </div>
+
+            <ul class="footer-list">
+                <li>
+                    <h3>Blog</h3>
+                </li>
+                <li>
+                    <a href="#" class="footer-link">Tech</a>
+                </li>
+                <li>
+                    <a href="#" class="footer-link">Adventures</a>
+                </li>
+                <li>
+                    <a href="#" class="footer-link">Music</a>
+                </li>
+            </ul>
+
+            <ul class="footer-list">
+                <li>
+                    <h3>Blog</h3>
+                </li>
+                <li>
+                    <a href="#" class="footer-link">App</a>
+                </li>
+                <li>
+                    <a href="#" class="footer-link">Desktop</a>
+                </li>
+                <li>
+                    <a href="#" class="footer-link">Cloud</a>
+                </li>
+            </ul>
+
+            <div id="footer_contacts">
+
+                <div id="footer_social_media">
+                    <a href="https://www.instagram.com/digitalprintcpv?igsh=MW11azY2OTl6bXBvdw==" target="_blank"
+                        class="footer_link" id="instagram">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+                    <a href="https://wa.me/5512991671420?text=Ol%C3%A1!%20Gostaria%20de%20fazer%20um%20pedido."
+                        class="footer_link" target="_blank" id="whatsapp">
+                        <i class="fa-brands fa-whatsapp"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div id="footer_copyright">
+            &#169
+            2024 all rights reservet
+        </div>
     </footer>
 
+    <script src="scripts.js"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.7/dist/umd/popper.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            effect: "coverflow",
+            grabCursor: true,
+            centeredSlides: true,
+            slidesPerView: "auto",
+            coverflowEffect: {
+                rotate: 50,
+                stretch: 0,
+                depth: 100,
+                modifier: 1,
+                slideShadows: true,
+            },
+            pagination: {
+                el: ".swiper-pagination",
+            },
+        });
+    </script>
+
+    <script type="text/javascript">
+        var swiper = new Swiper(".card_slider", {
+            slidesPerView: 3,
+            spaceBetween: 30,
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+            breakpoints: {
+                320: {
+                    slidesPerView: 1,
+                },
+                480: {
+                    slidesPerView: 2,
+                },
+                768: {
+                    slidesPerView: 3,
+                },
+                1200: {
+                    slidesPerView: 4,
+                },
+            },
+        });
+    </script>
+
 </body>
 
 </html>
