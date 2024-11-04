@@ -10,6 +10,14 @@
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
     <link rel="stylesheet" href="style.css?v=1.3">
     <link rel="icon" href="./img/Dzao.png">
+
+    <!--Link da seta-->
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=arrow_forward" />
+
+    <!--Link Swipper CSS-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
@@ -90,7 +98,7 @@
 
     <!--COLUNAS EXIB IMAGE-->
 
-    <article class="exibProds">
+    <article class="columns">
         <div class="produtos">
             <div class="row justify-content-center text-center">
                 <div class="col-12 cont">
@@ -98,11 +106,11 @@
                 </div>
             </div>
             <br>
-            <div class="row justify-content-center text-center columns">
+            <div class="row justify-content-center text-center columnsImg">
                 <div class="col-xl-2 col-md-4 col-sm-12" id="colImg" style="border: none; background: none;">
                     <img src="./img/ad_mockup.png" class=" cont img-fluid" alt="Imagem">
                     <p class="cont-p mt-5" style="font-size: 21px;">
-                        ADESIVO PERSONALIZADO <br>
+                        ADESIVO<br>
                     </p>
                     <button class="btn btn-outline-primary p-2" mb-3 style="width:75%;">Ver Mais!</button>
                 </div>
@@ -130,7 +138,7 @@
                 <div class="col-xl-2 col-md-4 col-sm-12" id="colImg" style="border: none; background: none;">
                     <img src="./img/ad_mockup.png" class=" cont img-fluid" alt="Imagem">
                     <p class="cont-p mt-5" style="font-size: 21px;">
-                        ADESIVO PERSONALIZADO <br>
+                        ADESIVO<br>
                     </p>
                     <button class="btn btn-outline-primary p-2 mb-3" style="width:75%;">Ver Mais!</button>
                 </div>
@@ -181,13 +189,63 @@
 
         <!--Coluna Mini Galeria-->
 
-        <div class="kodfun-galeri hidden">
-            <div style="background-image: url('img/cartaz2.jpeg');" class="img_foto"></div>
-            <div style="background-image: url('img/cartaz3.jpeg');" class="img_foto"></div>
-            <div style="background-image: url('img/cartaz4.jpeg');" class="img_foto"></div>
-            <div style="background-image: url('img/cartaz5.jpeg');" class="img_foto"></div>
-            <div style="background-image: url('img/cartaz6.jpeg');" class="img_foto"></div>
-            <div style="background-image: url('img/cartaz7.jpeg');" class="img_foto"></div>
+        <div class="container swiper hidden">
+            <div class="card-wrapper">
+                <ul class="card-list swiper-wrapper">
+                    <li class="card-item swiper-slide">
+                        <a href="#" class="card-link">
+                            <img src="img/Dzao.png" alt="Card Image" class="card-image">
+                            <p class="badge">Developers</p>
+                            <h2 class="card-title">Lorem ipsum dolor sit amet consectetur, adipisicing elit.</h2>
+                            <button class="card-button material-symbols-rounded">
+                                arrow_forward
+                            </button>
+                        </a>
+                    </li>
+                    <li class="card-item swiper-slide">
+                        <a href="#" class="card-link">
+                            <img src="img/Dzao.png" alt="Card Image" class="card-image">
+                            <p class="badge">Developers</p>
+                            <h2 class="card-title">Lorem ipsum dolor sit amet consectetur, adipisicing elit.</h2>
+                            <button class="card-button material-symbols-rounded">
+                                arrow_forward
+                            </button>
+                        </a>
+                    </li>
+                    <li class="card-item swiper-slide">
+                        <a href="#" class="card-link">
+                            <img src="img/Dzao.png" alt="Card Image" class="card-image">
+                            <p class="badge">Developers</p>
+                            <h2 class="card-title">Lorem ipsum dolor sit amet consectetur, adipisicing elit.</h2>
+                            <button class="card-button material-symbols-rounded">
+                                arrow_forward
+                            </button>
+                        </a>
+                    </li>
+                    <li class="card-item swiper-slide">
+                        <a href="#" class="card-link">
+                            <img src="img/Dzao.png" alt="Card Image" class="card-image">
+                            <p class="badge">Developers</p>
+                            <h2 class="card-title">Lorem ipsum dolor sit amet consectetur, adipisicing elit.</h2>
+                            <button class="card-button material-symbols-rounded">
+                                arrow_forward
+                            </button>
+                        </a>
+                    </li>
+                    <li class="card-item swiper-slide">
+                        <a href="#" class="card-link">
+                            <img src="img/Dzao.png" alt="Card Image" class="card-image">
+                            <p class="badge">Developers</p>
+                            <h2 class="card-title">Lorem ipsum dolor sit amet consectetur, adipisicing elit.</h2>
+                            <button class="card-button material-symbols-rounded">
+                                arrow_forward
+                            </button>
+                        </a>
+                    </li>
+                </ul>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+            </div>
         </div>
 
         <!--Coluna das Imagens e Textos-->
@@ -208,15 +266,13 @@
                                     </p>
                                 </div>
                             </div>
-                            <div class="col-md-6 ">
+                            <div class="col-md-6">
                                 <img src="img/title1.png" class="img_conteudo d-none d-md-block">
                             </div>
                         </div>
                     </div>
                 </article>
             </div>
-
-            <hr class="linha">
 
             <div class="Home">
                 <article class="caixa">
@@ -247,59 +303,36 @@
 
             <!--Cartão e Localização-->
 
-            <article class="columns">
-                <div class="row justify-content-center text-center">
-                    <div class="col-12 cont">
-                        <h1 class="display-5 cont" style="margin-top: 50px;">VENHA NOS CONHECER!</h1>
-                    </div>
-                </div>
-            </article>
-
-            <div class="container_cartão mb-5">
-                <div class="row">
-                    <div class="col-md-4">
-                        <div class="card">
-                            <img src="img/Dzao.png" class="card-img-top" alt="Produto 1">
-                            <div class="card-body">
-                                <h5 class="card-title">Guaratingueta</h5>
-                                <p class="card-text">Conheça nossa unidade em Guaratingueta.</p>
-                            </div>
+            <section class="hidden">
+                <article class="columns">
+                    <div class="row justify-content-center text-center">
+                        <div class="col-12 cont">
+                            <h1 class="display-5 cont" style="margin-top: 65px; margin-bottom: 65px;">
+                                Venha nos conhecer!
+                            </h1>
                         </div>
                     </div>
-                    <div class="col-md-4">
-                        <div class="card">
-                            <img src="img/Dzao.png" class="card-img-top" alt="Produto 2">
-                            <div class="card-body">
-                                <h5 class="card-title">Caçapava</h5>
-                                <p class="card-text">Conheça nossa sede em Caçapava.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="card">
-                            <img src="img/Dzao.png" class="card-img-top" alt="Produto 3">
-                            <div class="card-body">
-                                <h5 class="card-title">Mídia Digital</h5>
-                                <p class="card-text">Cobertura de mídia digital.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        </div>
+                </article>
+            </section>
 
-        <!--Coluna da Localização-->
 
-        <section class="mapa">
-            <br>
-            <iframe class=" col-sm-9 Localização"
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3669.7805413718193!2d-45.70826989999999!3d-23.1051282!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94cc517bbfeb7107%3A0x5369de60079c1385!2sR.%20Cel.%20Jo%C3%A3o%20Dias%20Guimar%C3%A3es%2C%20300%20-%20Vila%20Sao%20Joao%2C%20Ca%C3%A7apava%20-%20SP%2C%2012281-350!5e0!3m2!1spt-BR!2sbr!4v1729358111770!5m2!1spt-BR!2sbr"
-                width="1300" height="450" style="border:0;" allowfullscreen="" loading="lazy"
-                referrerpolicy="no-referrer-when-downgrade"></iframe>
         </section>
     </article>
 
+    <!--Fim desse conteudo-->
+
+    <!--Coluna da Localização-->
+
+    <section class="mapa">
+        <br>
+        <iframe class=" col-sm-9 Localização"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3669.7805413718193!2d-45.70826989999999!3d-23.1051282!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94cc517bbfeb7107%3A0x5369de60079c1385!2sR.%20Cel.%20Jo%C3%A3o%20Dias%20Guimar%C3%A3es%2C%20300%20-%20Vila%20Sao%20Joao%2C%20Ca%C3%A7apava%20-%20SP%2C%2012281-350!5e0!3m2!1spt-BR!2sbr!4v1729358111770!5m2!1spt-BR!2sbr"
+            width="1300" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </section>
+
+    </div>
+    <!--Fim desse conteudo-->
 
     <footer class="footer_principal">
         <div id="footer_content">
@@ -339,7 +372,7 @@
             </ul>
 
             <div id="footer_contacts">
-
+                <h3>Contatos</h3>
                 <div id="footer_social_media">
                     <a href="https://www.instagram.com/digitalprintcpv?igsh=MW11azY2OTl6bXBvdw==" target="_blank"
                         class="footer_link" id="instagram">
@@ -372,56 +405,11 @@
         integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
         crossorigin="anonymous"></script>
     <script src="js/bootstrap.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <!--Link SwipperJS script-->
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
-    <script>
-        var swiper = new Swiper(".mySwiper", {
-            effect: "coverflow",
-            grabCursor: true,
-            centeredSlides: true,
-            slidesPerView: "auto",
-            coverflowEffect: {
-                rotate: 50,
-                stretch: 0,
-                depth: 100,
-                modifier: 1,
-                slideShadows: true,
-            },
-            pagination: {
-                el: ".swiper-pagination",
-            },
-        });
-    </script>
-
-    <script type="text/javascript">
-        var swiper = new Swiper(".card_slider", {
-            slidesPerView: 3,
-            spaceBetween: 30,
-            pagination: {
-                el: ".swiper-pagination",
-                clickable: true,
-            },
-            navigation: {
-                nextEl: ".swiper-button-next",
-                prevEl: ".swiper-button-prev",
-            },
-            breakpoints: {
-                320: {
-                    slidesPerView: 1,
-                },
-                480: {
-                    slidesPerView: 2,
-                },
-                768: {
-                    slidesPerView: 3,
-                },
-                1200: {
-                    slidesPerView: 4,
-                },
-            },
-        });
-    </script>
+    <script src="scripts2.js"></script>
 
 </body>
 
